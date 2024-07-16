@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown {
+    position: absolute;
+    top: -380px;
+    right: -1100px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    font-family: sans-serif;
+}

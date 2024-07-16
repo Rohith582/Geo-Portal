@@ -1,0 +1,131 @@
+/* Add custom styles here */
+
+.left_panel {
+    width: 230px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.dropdown-menu {
+    max-height: 180px;
+    overflow-y: auto;
+    width: 180px;
+}
+
+.dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.dropdown .btn {
+    width: 180px;
+}
+
+.navbar-brand {
+    font-family: sans-serif;
+}
+
+.legend-container {
+    position: absolute;
+    bottom: 70px;
+    right: 5px;
+    z-index: 1001;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    opacity: 0.8;
+}
+
+.legend {
+    line-height: 18px;
+    color: #161616;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 1;
+}
+
+/* Modified styles */
+
+#map {
+    flex-grow: 1;
+    height: 90vh;
+    transition: margin-left 0.3s ease; /* Add transition for smooth animation */
+    transition: margin-right 0.3s ease;
+}
+
+#chart-container {
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    height: 90vh;
+    overflow-y: auto;
+ 
+    width: 25vw; 
+    max-width: 25vw;
+}
+
+#chart-container.hidden {
+    display: none; /* Hide the chart container */
+}
+
+/* Media query for screens like tablets */
+@media only screen and (max-width: 800px) {
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* Ensure navbar is above other content */
+    }
+
+    .left_panel {
+        position: absolute;
+        top: 56px; /* Height of the navbar */
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    #map {
+        margin-top: 516px; /* Adjust to create space for the navbar */
+        width: 100%; /* Make map container full width */
+        
+    }
+
+    
+    #chart-container {
+        position: absolute;
+        margin: 0 auto;
+        top: 1100px; /* Adjust top position as needed */
+        left: 50px;
+        width: 800; /* Make chart container full width */
+        height: auto;
+    }
+    
+}
+@media only screen and (max-width:500px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* Ensure navbar is above other content */
+    }
+
+    .left_panel .map .chart-contaier{
+      width:100%;
+      height: auto;
+    }
+
+}
