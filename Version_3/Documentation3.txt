@@ -1,7 +1,6 @@
 Version_3:
 
 Map.html:
-Certainly! Let's break down the HTML and associated JavaScript in the provided code:
 
 HTML Structure:
 
